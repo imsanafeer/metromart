@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Flavors&display=swap");
+
+.navbar {
+  display: flex;
+  position: fixed;
+  z-index: 2; 
+
+  width: 100%;
+  background-color: transparent;
+  /* backdrop-filter: blur(2px); */
+  height: 5vh;
+  color: red;
+  font-family: "Flavors", cursive;
+  font-weight: 400;
+  font-style: normal;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  font-size: 40px;
+}

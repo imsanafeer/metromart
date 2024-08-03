@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+.dept-container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.dept-title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    font-family: "Chelsea Market", system-ui;
+    font-weight: 400;
+    text-align: center;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    justify-items: center; 
+    width: 100%; 
+}
+
+.item {
+    padding: 30px;
+    width: 100%; 
+    box-sizing: border-box; 
+    border-radius: 8px;
+    text-align: center;
+    font-size: 28px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item-1 {
+    background-image: url('../assets/pexels-dana-tentis-118658-262959.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.item-2 {
+    background-image: url('../assets/pexels-brunoscramgnon-1337825.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.item-3 {
+    background-image: url('../assets/pexels-mali-65175.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.item-4 {
+    background-image: url('../assets/pexels-joshsorenson-1546890.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .items {
+        grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .items {
+        grid-template-columns: 1fr; /* One item per row */
+    }
+}

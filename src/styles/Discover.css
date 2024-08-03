@@ -1,0 +1,119 @@
+/* Base styles */
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.discover-container {
+    display: flex;
+    flex-direction: row; /* Default layout for larger screens */
+    height: 80vh;
+    background: white;
+    padding-top: 50px;
+    align-items: center; /* Center content vertically */
+}
+
+.discover-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.discover-section h1 {
+    font-family: "Chelsea Market", system-ui;
+    font-weight: 400;
+    text-align: center;
+}
+
+.discover-section p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.discover-section button {
+    color: white;
+    background-color: red;
+    align-self: center;
+    padding: 10px;
+    border: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.discover-section button:hover {
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+}
+
+.discover-section button:active {
+    position: relative;
+    top: 4px;
+}
+
+.image-section img {
+    height: 480px;
+    width: 848.49px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .discover-container {
+        flex-direction: column; 
+    }
+
+    .image-section img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .discover-container {
+        height: auto; 
+        padding-top: 20px; 
+    }
+
+    .discover-section {
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    .discover-section h1 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .discover-section p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .discover-section button {
+        padding: 8px;
+    }
+
+    .image-section img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .discover-section {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .discover-section h1 {
+        font-size: 1.25rem; /* Adjust font size for very small screens */
+    }
+
+    .discover-section p {
+        font-size: 0.875rem; /* Adjust font size for very small screens */
+    }
+
+    .discover-section button {
+        padding: 6px;
+    }
+}
